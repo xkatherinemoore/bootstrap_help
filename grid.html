@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Grid System</title>
+
+    <!--STYLESHEETS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Bootstrap Grid System</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>All grid elements follow a basic syntax: <br>
+                default_class-breakpoint-size <br>
+                Example: .col-lg-4 specifies a column that for large screen sizes and bigger has a width equal to 4 columns
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Containers, Rows, and Columns</h2>
+                <p>Bootstrap uses containers, rows, and columns to create a responsive web design. All items within a section are contained in a div element with class="container", inside of the .container is a div element with class="row", and inside of the .row are div elements with class="col"</p>
+            </div>
+            <div class="col">
+                <h2>Breakpoints</h2>
+                <p>Breakpoints change the styling based on the screen size. When specifying the breakpoint within the class, the styling will apply to screen sizes at that specified breakpoint and larger.</p>
+            </div>
+            <div class="col">
+                <h2>Size</h2>
+                <p>Bootstrap's grid system separates the window into 12 columns. By default, the .col elements will be equally sized and spaced out to fill the row. Adding a size to the class will change this default and allow different sized columns within the row. It's important to note that the sizes of the columns should add up to 12 or less.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Other Considerations</h2>
+                <p>.container-fluid can be used to always have a width of 100%</p>
+                <p>.offset-* can be used to offset a column by * number of columns (e.g. .offset-4 will leave a space equal to the width of four columns)</p>
+                <p>.row-cols-* class can be added to the .row element to specify a certain number of columns per row. Other columns within the row will wrap to the next row.</p>
+                <p>Rows and columns can be nested within each other within the same container. However, each column must still be contained within a row.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-striped">
+            <tr>
+                <th>Breakpoint</th>
+                <th>Dimensions</th>
+            </tr>
+            <tr>
+                <td>sm</td>
+                <td>&ge; 576 px</td>
+            </tr>
+            <tr>
+                <td>md</td>
+                <td>&ge; 768 px</td>
+            </tr>
+            <tr>
+                <td>lg</td>
+                <td>&ge; 992 px</td>
+            </tr>
+            <tr>
+                <td>xl</td>
+                <td>&ge; 1200 px</td>
+            </tr>
+            <tr>
+                <td>sm</td>
+                <td>&ge; 1400 px</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
