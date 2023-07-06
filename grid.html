@@ -11,6 +11,35 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg sticky-top mb-4">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav">
+                    <li class="nav-item nav-link">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="grid.html" class="nav-link active">BS Grid System</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="styling_utilities.html" class="nav-link">BS Styling Utilities</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="navbar.html" class="nav-link">BS Navbar</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="tables.html" class="nav-link">BS Tables</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="forms.html" class="nav-link">BS Forms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -18,7 +47,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-md">
                 <p>All grid elements follow a basic syntax: <br>
                 default_class-breakpoint-size <br>
                 Example: .col-lg-4 specifies a column that for large screen sizes and bigger has a width equal to 4 columns
@@ -26,11 +55,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-md">
                 <h2>Containers, Rows, and Columns</h2>
                 <p>Bootstrap uses containers, rows, and columns to create a responsive web design. All items within a section are contained in a div element with class="container", inside of the .container is a div element with class="row", and inside of the .row are div elements with class="col"</p>
             </div>
-            <div class="col">
+            <div class="col-md">
                 <h2>Breakpoints</h2>
                 <p>Breakpoints change the styling based on the screen size. When specifying the breakpoint within the class, the styling will apply to screen sizes at that specified breakpoint and larger.</p>
             </div>
@@ -77,5 +106,12 @@
             </tr>
         </table>
     </div>
+    </main>
+
+    <footer class="d-flex justify-content-center">
+        Copyright &copy; 2023 Katherine Moore
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

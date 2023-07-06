@@ -3,9 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BS navbar</title>
+
+    <!--STYLESHEETS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg sticky-top mb-4">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav">
+                    <li class="nav-item nav-link">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="grid.html" class="nav-link active">BS Grid System</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="styling_utilities.html" class="nav-link">BS Styling Utilities</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="navbar.html" class="nav-link active" aria-current="page">BS Navbar</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="tables.html" class="nav-link">BS Tables</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="forms.html" class="nav-link">BS Forms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row-xxl">
+                <div class="col">
+                    <h1>Bootstrap Navbar</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Bootstrap's Navbar offers great functionality but can also be one of the more confusing aspects of the Bootstrap Framework. This page will only break down the basic structure of the navbar and explain the collapse functionality. </p>
+
+                    <p>For a complete guide to all Bootstrap navbar features, visit the <a href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank" rel="noopener">Bootstrap website</a>. <br>
+                    <a href="https://www.w3schools.com/bootstrap/bootstrap_navbar.asp" target="_blank" rel="noopener">W3Schools</a> also has an easy to follow guide on some of the navbar features.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Creating a Navbar</h2>
+                    <h3> Basic Steps:</h3>
+                    <ol>
+                        <li>Give the nav element the classes .navbar and (usually) .navbar-expand-desired_breakpoint</li>
+                        <li>Include a div container that is the same width as the main content. This allows everything to line up. Another option is to use the .container-fluid class where the navbar will fill the screen</li>
+                        <li>Add the .navbar-brand class to any logos (Can be used for text, links, or photos)</li>
+                        <li>Create an unordered list (ul) with the class .navbar-nav</li>
+                        <li>Add list items (li) with the class .nav-item</li>
+                        <li>Add anchor elements (a) with the class .nav-link</li>
+                        <li>Add the .active class and aria-current="page" to the navigation link for the current page</li>
+                    </ol>
+                </div>
+                <div class="col">
+                    <h2>Sample Code:</h2>
+                    <div class="html-lang">
+<pre><code>
+&lt;<span class="element">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-expand-md"</span>&gt;
+    &lt;<span class="element">div</span> <span class="attribute">class</span>=<span class="value">"container-fluid"</span>&gt;
+        &lt;<span class="element">a</span> <span class="attribute">class</span>=<span class="value">"navbar-brand"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;MyLogo&lt;<span class="element">/a</span>&gt;
+        &lt;<span class="element">ul</span> <span class="attribute">class</span>=<span class="value">"navbar-nav"</span>&gt;
+            &lt;<span class="element">li</span> <span class="attribute">class</span>=<span class="value">"nav-item"</span>&gt;
+                &lt;<span class="element">a</span> <span class="attribute">class</span>=<span class="value">"nav-link active"</span> <span class="attribute">aria-current</span>=<span class="value">"page"</span>&gt;Link 1&lt;<span class="element">/a</span>&gt;
+            &lt;<span class="element">/li</span>&gt;
+            &lt;<span class="element">li</span> <span class="attribute">class</span>=<span class="value">"nav-item"</span>&gt;
+                &lt;<span class="element">a</span> <span class="attribute">class</span>=<span class="value">"nav-link"</span>&gt;Link 2&lt;<span class="element">/a</span>&gt;
+            &lt;<span class="element">/li</span>&gt;
+            &lt;<span class="element">li</span> <span class="attribute">class</span>=<span class="value">"nav-item"</span>&gt;
+                &lt;<span class="element">a</span> <span class="attribute">class</span>=<span class="value">"nav-link"</span>&gt;Link 3&lt;<span class="element">/a</span>&gt;
+            &lt;<span class="element">/li</span>&gt;
+        &lt;<span class="element">/ul</span>&gt;
+    &lt;<span class="element">/div</span>&gt;
+&lt;<span class="element">/nav</span>&gt;
+</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Toggling Navigation:</h2>
+                    <p>Bootstrap has a standard way of collapsing the navigation bar which makes it really useful for responsive websites, particularly in mobile</p>
+                    <ul>
+                        <li>Note that at the breakpoint, the navbar links switch from an inline horizontal display to vertical block display</li>
+                        <li>Toggling navigation will hide (collapse) the navigation menu/links until a button is pressed</li>
+                        <li>While mobile-friendly navigation is the most common use of the .collapse class, it's worth noting that it can be used for menus outside of mobile</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Basic Steps:</h2>
+                    <ol>
+                        <li>Create a toggle button.
+                            <ul>
+                                <li>Class is .navbar-toggler</li>
+                                <li>data-bs-toggle attribute adds Bootstrap's JavaScript toggle function</li>
+                                <li>data-bs-target attribute is used to specify the target (this points to the id attribute of the collapsed div)</li>
+                                <li>The aria-* attributes are used by screen readers and are covered more indepth <a href="#" aria-label="Accessibility link">here</a>.</li>
+                            </ul>
+                        </li>
+                        <li>Use span to add the toggler icon (class .navbar-toggler-icon) as the text for the button</li>
+                        <li>Add a div around the navigation menu 
+                            <ul>
+                                <li>This will usually be around the ul with class .navbar-nav</li>
+                                <li>Set div class to .collapse and .navbar-collapse</li>
+                                <li>Set a relevent id for the div. This should be the data-bs-target value for the .navbar-toggler</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col">
+                    <h2>Sample Code:</h2>
+                    <div class="html-lang">
+<pre><code id="code">
+&lt;<span class="element">button</span> <span class="attribute">class</span>=<span class="value">"navbar-toggler"</span> <span class="attribute">type</span>=<span class="value">"button"</span> 
+<span class="attribute">data-bs-toggle</span>=<span class="value">"collapse"</span> <span class="attribute">data-bs-target</span>=<span class="value">"#my-nav-id"</span> 
+<span class="attribute">aria-controls</span>=<span class="value">"#my-nav-id"</span> <span class="attribute">aria-expanded</span>=<span class="value">"false"</span> 
+<span class="attribute">aria-label</span>=<span class="value">"Toggle navigation"</span>&gt;
+    &lt;<span class="element">span</span> <span class="attribute">class</span>=<span class="value">"navbar-toggler-icon"</span>&gt;&lt;<span class="element">/span</span>&gt;
+&lt;<span class="element">/button</span>&gt;
+
+&lt;<span class="element">div</span> <span class="attribute">class</span>=<span class="value">"collapse navbar-collapse"</span> <span class="attribute">id</span>=<span class="value">"my-nav-id"</span>&gt;
+    &lt;<span class="element">ul</span> <span class="attribute">class</span>=<span class="value">"navbar-nav"</span>...&lt;<span class="element">/ul</span>&gt;
+&lt;<span class="element">/div</span>&gt;    
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="d-flex justify-content-center">
+        Copyright &copy; 2023 Katherine Moore
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

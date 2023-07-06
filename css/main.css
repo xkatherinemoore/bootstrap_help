@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    background-color: aquamarine;
+}
+
+
+/* CODE FORMATTING */
+#code {
+    overflow-wrap: break-word;
+}
+code .element {
+    color: navy;
+}
+
+code .attribute {
+    color: darkred;
+}
+
+code .value {
+    color: darkorchid;
+}
