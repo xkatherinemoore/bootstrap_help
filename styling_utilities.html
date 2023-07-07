@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg sticky-top mb-4">
-        <div class="container">
+        <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="nav">
@@ -39,24 +39,24 @@
         </div>
     </nav>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
+        <div class="container g-1">
+            <div class="row gx-5">
+                <div class="col gy-5">
                     <h1>Bootstrap Styling Utilities</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row gx-5">
+                <div class="col gy-5">
                     <p>Bootstrap supports faster styling through use of their styling utilities. These are bootstrap classes that can be added to modify the styling of an element, including background and text color, spacing, borders, sizing, and text. This page provides only a brief overview of the functionality supplied by Bootstrap Utilities</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row gx-5">
+                <div class="col gy-5">
                     <h2>Color</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row gx-5">
+                <div class="col gy-5">
                     <h3>Color Classes</h3>
                     <p>The classes below are the standard color classes in Bootstrap. They can be used to set the background or text color of any element by adding the appropriate class. Note that the .text-bg-*  adjusts the background color to whatever is specified and then changes the font color to a high-contrast color. These classes can also be used to create themes which is covered <a href="#" aria-label="Creating BS themes">here</a>.</p>
                     <table class="table">
@@ -111,7 +111,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col">
+                <div class="col gy-5">
                     <h3>Opacity</h3>
                     <p>In addition to the standard colorings, Bootstrap also supports adjusting the opacity using classes.</p>
                     <table class="table">
@@ -158,9 +158,8 @@
                     </table>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="col">
+            <div class="row gx-5">
+                    <div class="col gy-5">
                         <h3>Color-related Styling Classes</h3>
                         <table class="table">
                             <thead>
@@ -212,42 +211,223 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
+        <div class="container g-1">
+            <div class="row gx-5">
+                <div class="col gy-5">
                     <h2>Text & Font</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row gx-5">
+                <div class="col gy-5">
                     <h3>Text Classes</h3>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th></th>
+                                <th>Text alignment</th>
+                                <th>Text wrapping</th>
+                                <th>Text transform</th>
+                                <th>Text decoration</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th></th>
+                                <th>CSS Properties</th>
+                                <td>text-align</td>
+                                <td>text-wrap, word-wrap, word-break</td>
+                                <td>text-transform</td>
+                                <td>text-decoration</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td class="text-start">.text-start (left)</td>
+                                <td class="text-wrap">.text-wrap<br>This text will wrap.</td>
+                                <td class="text-lowercase">.text-lowercase</td>
+                                <td class="text-decoration-underline">.text-decoration-underline</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td class="text-center">.text-center</td>
+                                <td class="text-nowrap">.text-nowrap<br>This text should not wrap.</td>
+                                <td class="text-uppercase">.text-uppercase</td>
+                                <td class="text-decoration-line-through">.text-decoration-line-through</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td class="text-end">.text-end (right)</td>
+                                <td class="text-break">.text-break<br>Thistextwillbreak.</td>
+                                <td class="text-capitalize">.text-capitalize</td>
+                                <td><a href="#" class="text-decoration-none">.text-decoration-none</a></td>
                             </tr>
                         </tbody>
                     </table>
+                    <p>Note that text-alignment classes can also be specified at breakpoints. They follow the form:</p>
+                    <p>.text-<i>breakpoint</i>-<i>alignment</i> where text will be aligned as specified at the breakpoint or larger screen sizes.</p>
                 </div>
-                <div class="col">
+            </div>
+            <div class="row gx-5">
+                <div class="col gy-5">
                     <h3>Font Classes</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Font Size</th>
+                        </tr>
+                        <tr>
+                            <td>font-size</td>
+                        </tr>
+                        <tr>
+                            <td class="fs-1">.fs-1</td>
+                        </tr>
+                        <tr>
+                            <td class="fs-2">.fs-2</td>
+                        </tr>
+                        <tr>
+                            <td class="fs-3">.fs-3</td>
+                        </tr>
+                        <tr>
+                            <td class="fs-4">.fs-4</td>
+                        </tr>
+                        <tr>
+                            <td class="fs-5">.fs-5</td>
+                        </tr>
+                        <tr>
+                            <td class="fs-6">.fs-6</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col gy-5">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th></th>
+                                <th>Font Weight</th>
+                                <th>Font Style</th>
+                                <th>Line Height</th>
+                                <th>Font Family</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th></th>
+                                <th>CSS Properties</th>
+                                <td>font-weight</td>
+                                <td>font-style</td>
+                                <td>line-height</td>
+                                <td>font-family</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td class="fw-bold">.fw-bold</td>
+                                <td class="fst-italic">.fst-italic</td>
+                                <td class="lh-1">.lh-1</td>
+                                <td class="font-monospace">.font-monospace</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td class="fw-bolder">.fw-bolder</td>
+                                <td class="fst-normal">.fst-normal</td>
+                                <td class="lh-sm">.lh-sm</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td class="fw-light">.fw-light</td>
+                                <td></td>
+                                <td class="lh-base">.lh-base</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td class="fw-lighter">.fw-lighter</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+        <div class="container g-1">
+            <div class="row gx-5">
+                <div class="col gy-5">
+                    <h2>Spacing</h2>
+                    <p>Bootstrap spacing utilities includes classes to specify margins, padding, and gap. The classes range in size from 0 (no margin/padding/gap) - 5 (largest margin/padding/gap), as well as an auto function. They support breakpoints and have options to specify sides. The table below breaks down the possible class options.</p>
+                    <p class="fw-lighter">Note: The container, row, and column classes for divs have a special property called gutters (g) which can also be used to adjust the padding and margins of these elements. </p>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col gy-5">
+                    <p class="lead text-center">[property][side]-[breakpoint][size]</p>
+                    <p>A property and size is required, but the side and breakpoint may be omitted.</p>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col gy-5">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Side</th>
+                                <th>Breakpoint</th>
+                                <th>Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>m (margin)</td>
+                                <td><i>blank</i> (all)</td>
+                                <td>sm</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>p (padding)</td>
+                                <td>t (top)</td>
+                                <td>md</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>gap (gap)</td>
+                                <td>b (bottom)</td>
+                                <td>lg</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>s (start/left)</td>
+                                <td>xl</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>e (end/right)</td>
+                                <td>xxl</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>x (left & right)</td>
+                                <td></td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>y (top & bottom)</td>
+                                <td></td>
+                                <td>auto</td>
+                            </tr>
+                        </tbody>
+                    </table>                
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col gy-5">
+
+                </div>
+                <div class="col gy-5">
+
+                </div>
+                <div class="col gy-5">
+
                 </div>
             </div>
         </div>

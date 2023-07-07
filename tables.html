@@ -3,9 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BS Tables</title>
+
+    <!--STYLESHEETS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg sticky-top mb-4">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav">
+                    <li class="nav-item nav-link">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="grid.html" class="nav-link">BS Grid System</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="styling_utilities.html" class="nav-link">BS Styling Utilities</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="navbar.html" class="nav-link">BS Navbar</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="tables.html" class="nav-link active" aria-current="page">BS Tables</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a href="forms.html" class="nav-link">BS Forms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Bootstrap Tables</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Tables in Bootstrap offer nice formatting with very little effort from a design perspective. The table below provides descriptions for the most useful classes.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>BS Table Classes</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>.table</td>
+                                <td>Applied to the table element; it provides standard formatting for the table</td>
+                            </tr>
+                            <tr>
+                                <td>.table-color-*</td>
+                                <td>Can be applied to any table element; it will change the background color of that element to the color specified</td>
+                            </tr>
+                            <tr>
+                                <td>.table-striped</td>
+                                <td>Applied to the table element; it creates striped rows</td>
+                            </tr>
+                            <tr>
+                                <td>.table-striped-columns</td>
+                                <td>Applied to the table element; it creates striped columns</td>
+                            </tr>
+                            <tr>
+                                <td>.table-hover</td>
+                                <td>Applied to the table element; it highlights a row of the table when the user hovers over it with the mouse (requires tbody element)</td>
+                            </tr>
+                            <tr>
+                                <td>.table-active</td>
+                                <td>Applied to a tr, th, or td element; it highlights that element with the same formatting as if hovered</td>
+                            </tr>
+                            <tr>
+                                <td>.table-bordered</td>
+                                <td>Applied to the table element; adds collapsed borders to the table (borders around each cell)</td>
+                            </tr>
+                            <tr>
+                                <td>.table-borderless</td>
+                                <td>Applied to the table element; removes all borders from the table</td>
+                            </tr>
+                            <tr>
+                                <td>.table-sm</td>
+                                <td>Removes padding to create a more consolidated table</td>
+                            </tr>
+                            <tr>
+                                <td>.table-group-divider</td>
+                                <td>Can only be used in thead, tbody, or tfoot elements; creates a heavier top-border for the class element to separate sections</td>
+                            </tr>
+                            <tr>
+                                <td>.table-responsive-*</td>
+                                <td>Applied to a div that wraps the table; it can be used to create a table that scrolls horizontally (breakpoints are optional)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <iframe height="800" style="width: 100%;" scrolling="no" title="BS Tables" src="https://codepen.io/xkatherinemoore/embed/jOQGYJz?default-tab=html%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/xkatherinemoore/pen/jOQGYJz">
+                        BS Tables</a> by Katherine Moore (<a href="https://codepen.io/xkatherinemoore">@xkatherinemoore</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </div>
+            </div>
+    </main>
+
+    <footer class="d-flex justify-content-center">
+        Copyright &copy; 2023 Katherine Moore
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
