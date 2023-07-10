@@ -3,7 +3,23 @@ h1 {
 }
 
 .navbar {
-    background-color: aquamarine;
+    background-color: darkslateblue;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: lightsalmon;
+    text-decoration: underline;
+}
+
+.disabled {
+    color: white;
+    font-weight: light;
+    text-decoration: line-through;
 }
 
 
